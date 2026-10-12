@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sarah & Adam's Wedding</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Sarah & Adam 💍</h1>
+    <p>Take a photo, pick a frame, post it to your story!</p>
+
+    <div class="stage">
+      <video id="video" autoplay playsinline muted></video>
+      <canvas id="canvas" width="1080" height="1920"></canvas>
+    </div>
+
+    <div class="frames" id="frames">
+      <img src="frames/frame1.png" class="frame-thumb active" data-src="frames/frame1.png" />
+      <img src="frames/frame2.png" class="frame-thumb" data-src="frames/frame2.png" />
+    </div>
+
+    <div class="buttons">
+      <button id="snap">📸 Snap</button>
+      <label class="btn">🖼️ Gallery
+        <input type="file" id="file" accept="image/*" hidden />
+      </label>
+      <button id="flip">🔄 Flip</button>
+    </div>
+
+    <div class="buttons" id="result" hidden>
+      <button id="share">Share to Story</button>
+      <button id="save">Save to Phone</button>
+      <button id="retake">Retake</button>
+    </div>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
